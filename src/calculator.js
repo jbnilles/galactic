@@ -63,4 +63,20 @@ export default class Calculator {
     console.log(age + '   ' + expectedLife )
     return Math.round(age - expectedLife);
   }
+  calcYearsOld(month, day, year) {
+    let date = new Date();
+    let curDay = date.getDate();
+    let curMonth = date.getMonth();
+    let curYear = date.getUTCFullYear();
+
+    let tempAge = curYear - year;
+    if(month === curMonth) {
+      if(curDay < day) {
+        tempAge--;
+      } 
+    } else if (month > curMonth) {
+      tempAge--;
+    } 
+    return tempAge;
+  }
 }
