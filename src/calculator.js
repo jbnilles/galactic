@@ -5,8 +5,16 @@ export default class Calculator {
       United_Kingdom: 80.96
     };
     this.earthYears = earthYears;
+    this.lifeExpectancy = this.getEarthLifeExpectancy(country);
+    this.mercury = {
+      name: 'Mercury',
+      years: 21,//this.calcMercury(),
+      expectedYears: 12,//this.calcMercuryExpectancy(),
+      expectedYearsPassed: 11,//this.calcPassedExpectancy(mercury[years],mercury[expectedYears])
+    };
+    
 
-    this.lifeExpectancy = this.getEarthLifeExpectancy(country); 
+     
     
   }
   calcMercury() {
