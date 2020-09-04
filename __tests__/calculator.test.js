@@ -27,6 +27,9 @@ describe('Calculator', () => {
   test('should correctly calculate life expectancy on venus given earth life expectancy', () => {
     expect(calc.calcVenusExpectancy()).toEqual(127);
   }); 
+  test('should correctly calculate life expectancy on mars given earth life expectancy', () => {
+    expect(calc.calcMarsExpectancy()).toEqual(127);
+  }); 
 
   
 });
