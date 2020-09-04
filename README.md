@@ -1,47 +1,53 @@
-# _{Application Name}_
+# _Super Galactic Calculator_
 
-#### _{Brief description of application}, 8/21/20_
+#### _This is a project for Epicodus week 5 to calculate a persons age on different planets, 9/4/20_
 
 #### By _**Joseph Nilles**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This project will ask the user for their age and then show the user what their age would be on various other planets. This project is designed to show the ability to create a project using TDD and testing with jest._
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **add the value of all the symbols** | 66 |LXVI |
-| **there may not be more than three of the same characters in a row. Instead, you switch to subtraction.** | 90 | XC |
-| **separate ones, tens, hundreds, and thousands**| 99 | XCIX |
-| **check user input for proper entry**| 2.5 | return error |
+| **calculate user age in Mercury years.** | 100 | 417 |
+| **calculate user age in Venus years.** | 100 | 161 |
+| **calculate user age in Mars years.**| 100 | 53 |
+| **calculate user age in Jupiter years.**| 100 | 8 |
+| **calculate user life expectancy in Earth years**| U.S. | 78.5 |
+| **calculate user life expectancy in Mercury years**| 78.5 | 327 |
+| **calculate user life expectancy in Venus years**| 78.5 | 127 |
+| **calculate user life expectancy in Mars years**| 78.5 | 42 |
+| **calculate user life expectancy in Jupiter years**| 78.5 | 7 |
+| **If user has surpassed the life expectancy calculate, how many years passed they are**| 78.5, 100 | 11.5 |
 
 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository_
+* _cd to the root directory of this project_
+* _in the terminal use the command npm install_
+* _in the terminal use the command npm start_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+
+
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_no know bugs_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_contact author at jbnilles24@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_this project uses node.js, html, css, boostrap, JavaScript, jQuery and Jest_
 
 ### License
 
 *This software is available with an MIT license*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_Joseph Nilles_**
