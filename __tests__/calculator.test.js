@@ -18,6 +18,9 @@ describe('Calculator', () => {
   test('should correctly calculate years on Jupiter given earth years', () =>{
     expect(calc.calcJupiter()).toEqual(8); 
   });
+  test('should return the expected life expectancy based on which country the user selects', () => {
+    
+  });
   
 
   
