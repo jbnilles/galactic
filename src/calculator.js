@@ -30,4 +30,7 @@ export default class Calculator {
   calcVenusExpectancy() {
     return Math.round(this.lifeExpectancy / .62);
   }
+  calcMarsExpectancy() {
+    return Math.round(this.lifeExpectancy / 1.88);
+  }
 }
