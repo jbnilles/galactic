@@ -7,7 +7,7 @@ describe('Calculator', () => {
     
   });
   test('should correctly calculate years on mercury given earth years', () => {
-    expect(calc.calcMercury()).toEqual(41700);
+    expect(calc.calcMercury()).toEqual(417);
   }); 
   
 
