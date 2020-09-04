@@ -16,7 +16,7 @@ describe('Calculator', () => {
     expect(calc.calcMars()).toEqual(53); 
   });
   test('should correctly calculate years on Jupiter given earth years', () =>{
-    expect(calc.calcJupiter()).toEqual(80); 
+    expect(calc.calcJupiter()).toEqual(8); 
   });
   
 
