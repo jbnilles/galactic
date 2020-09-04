@@ -21,7 +21,9 @@ describe('Calculator', () => {
   test('should return the expected life expectancy based on which country the user selects', () => {
     expect(calc.getEarthLifeExpectancy('United_States')).toEqual(78.5);
   });
-  
+  test('should correctly calculate life expectancy on mercury given earth life expectancy', () => {
+    expect(calc.calcMercuryExpectancy()).toEqual(327);
+  }); 
 
   
 });
