@@ -33,34 +33,34 @@ export default class Calculator {
     };
   }
   calcMercury() {
-    return Math.round(this.earthYears / .24);
+    return parseFloat((this.earthYears / .24).toFixed(2));
   }
   calcVenus() {
-    return Math.round(this.earthYears / .62);
+    return parseFloat((this.earthYears / .62).toFixed(2));
   }
   calcMars() {
-    return Math.round(this.earthYears / 1.88);
+    return parseFloat((this.earthYears / 1.88).toFixed(2));
   }
   calcJupiter() {
-    return Math.round(this.earthYears / 11.86);
+    return parseFloat((this.earthYears / 11.86).toFixed(2));
   }
   getEarthLifeExpectancy(country) {
     return this.expectedLife[country];
   }
   calcMercuryExpectancy() {
-    return Math.round(this.lifeExpectancy / .24);
+    return parseFloat((this.lifeExpectancy / .24).toFixed(2));
   }
   calcVenusExpectancy() {
-    return Math.round(this.lifeExpectancy / .62);
+    return parseFloat((this.lifeExpectancy / .62).toFixed(2));
   }
   calcMarsExpectancy() {
-    return Math.round(this.lifeExpectancy / 1.88);
+    return parseFloat((this.lifeExpectancy / 1.88).toFixed(2));
   }
   calcJupiterExpectancy() {
-    return Math.round(this.lifeExpectancy / 11.86);
+    return parseFloat((this.lifeExpectancy / 11.86).toFixed(2));
   }
   calcPassedExpectancy(age, expectedLife) {
-    return Math.round(age - expectedLife);
+    return (age - expectedLife);
   }
   calcYearsOld(month, day, year) {
     let date = new Date();
@@ -84,6 +84,6 @@ export default class Calculator {
   calcNextBirthday(yearsOld, planetModifier ) {
     let planetDays = 365 * planetModifier;
     let daysTillBirthday = planetDays -  (planetDays * (yearsOld - Math.floor(yearsOld)));
-    return daysTillBirthday;
+    return parseFloat(daysTillBirthday.toFixed(2));
   }
 }
