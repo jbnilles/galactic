@@ -22,6 +22,16 @@ _This project will ask the user for their age and then show the user what their 
 | **calculate user life expectancy in Jupiter years**| 78.5 | 7 |
 | **If user has surpassed the life expectancy calculate, how many years passed they are**| 78.5, 100 | 22 |
 
+### Further exploration Specs
+| Spec | Input | Output |
+| :-------------     | :------------- | :------------- |
+| **calculate user age based on date input.** | 9/4/2000 | 20 |
+| **calculate user next birthday in Mercury years.** | 9/4/2000 | ? |
+| **calculate user next birthday in Venus years.** | 9/4/2000 | ? |
+| **calculate user next birthday in Earth years.** | 9/4/2000 | ? |
+| **calculate user next birthday in Mars years.** | 9/4/2000 | ? |
+| **calculate user next birthday in Jupiter years.** | 9/4/2000 | ? |
+
 
 
 ## Setup/Installation Requirements

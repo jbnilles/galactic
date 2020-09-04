@@ -16,15 +16,10 @@ function writeCountries(dom, calc) {
 function writeToPlanetCard(cardDom, keyValPair, calc){
   let html = '';
   let tempDom = cardDom.find('#planet-name');
-  //tempDom.text('yo');
   tempDom.text(keyValPair['name']);
-  //$('#planet-name').text('here1');
- 
-
+  
   tempDom = cardDom.find('#planet-stats');
   tempDom.text('');
-  
-  
   html += '<li> Years old: ' + keyValPair["years"] + '</li>' 
   html += '<li> Life expectancy: ' + keyValPair["expectedYears"] + '</li>' 
   let expectedYearsPassed = calc.calcPassedExpectancy(keyValPair['years'],keyValPair['expectedYears']);
@@ -38,11 +33,18 @@ function writeToPlanetCard(cardDom, keyValPair, calc){
 $(document).ready(function() {
   let calc = new Calculator(0, 'United_States');
   writeCountries($('#country'), calc);
-  writeToPlanetCard($('#mercury'), calc.mercury, calc);
-  writeToPlanetCard($('#venus'), calc.venus, calc);
-  writeToPlanetCard($('#earth'), calc.earth, calc);
-  writeToPlanetCard($('#mars'), calc.mars, calc);
-  writeToPlanetCard($('#jupiter'), calc.jupiter, calc);
+  $('#input-form').submit(function (event) {
+    event.preventDefault();
+    let age = $('#age').val();
+    let country = $('#country').val();
+    calc = new Calculator(age, country);
+    writeToPlanetCard($('#mercury'), calc.mercury, calc);
+    writeToPlanetCard($('#venus'), calc.venus, calc);
+    writeToPlanetCard($('#earth'), calc.earth, calc);
+    writeToPlanetCard($('#mars'), calc.mars, calc);
+    writeToPlanetCard($('#jupiter'), calc.jupiter, calc);
+  });
+  
 
   
 });
