@@ -5,5 +5,7 @@ export default class Calculator {
   calcMercury() {
     return Math.round(this.earthYears / .24);
   };
-  
+  calcVenus() {
+    return Math.round(this.earthYears / .62);
+  };
 }
