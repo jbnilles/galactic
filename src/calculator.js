@@ -8,9 +8,28 @@ export default class Calculator {
     this.lifeExpectancy = this.getEarthLifeExpectancy(country);
     this.mercury = {
       name: 'Mercury',
-      years: 21,//this.calcMercury(),
-      expectedYears: 12,//this.calcMercuryExpectancy(),
-      expectedYearsPassed: 11,//this.calcPassedExpectancy(mercury[years],mercury[expectedYears])
+      years: this.calcMercury(),
+      expectedYears: this.calcMercuryExpectancy(),
+    };
+    this.venus = {
+      name: 'Venus',
+      years: this.calcVenus(),
+      expectedYears: this.calcVenusExpectancy(),
+    };
+    this.earth = {
+      name: 'Earth',
+      years: this.earthYears,
+      expectedYears: this.lifeExpectancy,
+    };
+    this.mars = {
+      name: 'Mars',
+      years: this.calcMars(),
+      expectedYears: this.calcMarsExpectancy(),
+    };
+    this.jupiter = {
+      name: 'Jupiter',
+      years: this.calcJupiter(),
+      expectedYears: this.calcJupiterExpectancy(),
     };
     
 
@@ -45,6 +64,7 @@ export default class Calculator {
     return Math.round(this.lifeExpectancy / 11.86);
   }
   calcPassedExpectancy(age, expectedLife) {
+    console.log(age + '   ' + expectedLife )
     return Math.round(age - expectedLife);
   }
 }
