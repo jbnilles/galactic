@@ -10,7 +10,7 @@ describe('Calculator', () => {
     expect(calc.calcMercury()).toEqual(417);
   }); 
   test('should correctly calculate years on Venus given earth years', () => {
-    expect(calc.calcVenus()).toEqual(1610); 
+    expect(calc.calcVenus()).toEqual(161); 
   });
   
 
