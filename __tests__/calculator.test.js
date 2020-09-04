@@ -40,7 +40,7 @@ describe('Calculator', () => {
     expect(calc.calcYearsOld(9,4,2000)).toEqual(20); 
   }); 
   test('calculate days until next birthday for user on mercury', () =>  {
-    expect(calc.calcNextBirthday(20, .24)).toEqual(87); 
+    expect(calc.calcNextBirthday(20, .24)).toEqual(87.6); 
   });
 
   
