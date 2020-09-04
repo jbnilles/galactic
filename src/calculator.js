@@ -31,4 +31,7 @@ export default class Calculator {
   getEarthLifeExpectancy(country) {
     return this.expectedLife[country];
   }
+  calcMercuryExpectancy() {
+    return Math.round(this.lifeExpectancy / .24);
+  }
 }

@@ -22,7 +22,7 @@ describe('Calculator', () => {
     expect(calc.getEarthLifeExpectancy('United_States')).toEqual(78.5);
   });
   test('should correctly calculate life expectancy on mercury given earth life expectancy', () => {
-    expect(calc.calcMercuryExpectancy()).toEqual(327);
+    expect(calc.calcMercuryExpectancy()).toEqual(3270);
   }); 
 
   
