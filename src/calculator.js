@@ -31,10 +31,6 @@ export default class Calculator {
       years: this.calcJupiter(),
       expectedYears: this.calcJupiterExpectancy(),
     };
-    
-
-     
-    
   }
   calcMercury() {
     return Math.round(this.earthYears / .24);

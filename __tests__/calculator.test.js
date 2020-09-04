@@ -36,6 +36,9 @@ describe('Calculator', () => {
   test('if user is passed the life expectancy return how many years passed', () => {
     expect(calc.calcPassedExpectancy(100,78.5)).toEqual(22);
   }); 
+  test('calulate user age based on user birthday', () => {
+    expect(calc.calcPassedExpectancy(100,78.5)).toEqual(22);
+  }); 
 
   
 });
