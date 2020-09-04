@@ -3,7 +3,7 @@ export default class Calculator {
     this.expectedLife = {
       United_States: 78.5,
       United_Kingdom: 80.96
-    }
+    };
     this.earthYears = earthYears;
 
     this.lifeExpectancy = this.getEarthLifeExpectancy(country); 
@@ -11,16 +11,16 @@ export default class Calculator {
   }
   calcMercury() {
     return Math.round(this.earthYears / .24);
-  };
+  }
   calcVenus() {
     return Math.round(this.earthYears / .62);
-  };
+  }
   calcMars() {
     return Math.round(this.earthYears / 1.88);
-  };
+  }
   calcJupiter() {
     return Math.round(this.earthYears / 11.86);
-  };
+  }
   getEarthLifeExpectancy(country) {
     return this.expectedLife[country];
   }
