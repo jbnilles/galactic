@@ -1,20 +1,13 @@
 export default class Calculator {
-  constructor(earthYears){
-  this.earthYears = earthYears;
-  this.lifeExpectancy = 0; 
-  this.expectedLife = {
-    United_States: 78.5,
-    United_Kingdom: 80.96
-  }
-  
-  }
   constructor(earthYears, country){
-    this.earthYears = earthYears;
-    this.lifeExpectancy = getEarthLifeExpectancy(country); 
     this.expectedLife = {
       United_States: 78.5,
       United_Kingdom: 80.96
     }
+    this.earthYears = earthYears;
+
+    this.lifeExpectancy = this.getEarthLifeExpectancy(country); 
+    
   }
   calcMercury() {
     return Math.round(this.earthYears / .24);

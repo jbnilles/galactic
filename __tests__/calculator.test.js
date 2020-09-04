@@ -3,7 +3,7 @@ import Calculator from '../src/calculator.js'
 describe('Calculator', () => {
   let calc;
   beforeEach(() => {
-    calc = new Calculator(100);
+    calc = new Calculator(100, 'United_States');
     
   });
   test('should correctly calculate years on mercury given earth years', () => {
@@ -22,7 +22,7 @@ describe('Calculator', () => {
     expect(calc.getEarthLifeExpectancy('United_States')).toEqual(78.5);
   });
   test('should correctly calculate life expectancy on mercury given earth life expectancy', () => {
-    expect(calc.calcMercuryExpectancy()).toEqual(3270);
+    expect(calc.calcMercuryExpectancy()).toEqual(327);
   }); 
 
   
