@@ -81,4 +81,9 @@ export default class Calculator {
     } 
     return tempAge;
   }
+  calcNextBirthday(yearsOld, planetModifier ) {
+    let planetDays = 365 * planetModifier;
+    let daysTillBirthday = planetDays -  (planetDays * (yearsOld - Math.floor(yearsOld)));
+    return daysTillBirthday;
+  }
 }
