@@ -19,7 +19,7 @@ describe('Calculator', () => {
     expect(calc.calcJupiter()).toEqual(8); 
   });
   test('should return the expected life expectancy based on which country the user selects', () => {
-    expect(calc.expectedLife['United_States']).toEqual(785);
+    expect(calc.getEarthLifeExpectancy('United_States')).toEqual(785);
   });
   
 

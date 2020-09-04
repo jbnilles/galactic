@@ -19,4 +19,7 @@ export default class Calculator {
   calcJupiter() {
     return Math.round(this.earthYears / 11.86);
   };
+  getEarthLifeExpectancy(country) {
+    return this.expectedLife[country];
+  }
 }
