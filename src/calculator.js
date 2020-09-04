@@ -27,4 +27,7 @@ export default class Calculator {
   calcMercuryExpectancy() {
     return Math.round(this.lifeExpectancy / .24);
   }
+  calcVenusExpectancy() {
+    return Math.round(this.lifeExpectancy / .62);
+  }
 }
