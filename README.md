@@ -20,7 +20,7 @@ _This project will ask the user for their age and then show the user what their 
 | **calculate user life expectancy in Venus years**| 78.5 | 127 |
 | **calculate user life expectancy in Mars years**| 78.5 | 42 |
 | **calculate user life expectancy in Jupiter years**| 78.5 | 7 |
-| **If user has surpassed the life expectancy calculate, how many years passed they are**| 78.5, 100 | 11.5 |
+| **If user has surpassed the life expectancy calculate, how many years passed they are**| 78.5, 100 | 22 |
 
 
 
