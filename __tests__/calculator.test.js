@@ -33,6 +33,9 @@ describe('Calculator', () => {
   test('should correctly calculate life expectancy on jupiter given earth life expectancy', () => {
     expect(calc.calcJupiterExpectancy()).toEqual(7);
   }); 
+  test('if user is passed the life expectancy return how many years passed', () => {
+    expect(calc.calcPassedExpectancy(100,78.5).toEqual(7);
+  }); 
 
   
 });
