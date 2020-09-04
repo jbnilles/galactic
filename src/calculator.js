@@ -11,4 +11,7 @@ export default class Calculator {
   calcMars() {
     return Math.round(this.earthYears / 1.88);
   };
+  calcJupiter() {
+    return Math.round(this.earthYears / 11.86);
+  };
 }
