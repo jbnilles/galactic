@@ -37,7 +37,7 @@ describe('Calculator', () => {
     expect(calc.calcPassedExpectancy(100,78.5)).toEqual(22);
   }); 
   test('calulate user age based on user birthday', () => {
-    expect(calc.calcYearsOld(9,5,2000)).toEqual(20);
+    expect(calc.calcYearsOld(9,4,2000)).toEqual(20); 
   }); 
 
   
