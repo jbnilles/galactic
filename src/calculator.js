@@ -8,4 +8,7 @@ export default class Calculator {
   calcVenus() {
     return Math.round(this.earthYears / .62);
   };
+  calcMars() {
+    return Math.round(this.earthYears / 1.88);
+  };
 }
