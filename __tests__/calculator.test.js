@@ -55,6 +55,8 @@ describe('Calculator', () => {
   test('calculate days until next birthday for user on jupiter', () =>  {
     expect(calc.calcNextBirthday(20.00, 11.86)).toEqual(4328.9); 
   });
+  
+
 
   
 });

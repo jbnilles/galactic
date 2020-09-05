@@ -92,4 +92,5 @@ export default class Calculator {
     let daysTillBirthday = planetDays -  (planetDays * (yearsOld - Math.floor(yearsOld)));
     return parseFloat(daysTillBirthday.toFixed(2));
   }
+  
 }

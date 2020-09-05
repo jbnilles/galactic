@@ -26,11 +26,11 @@ _This project will ask the user for their age and then show the user what their 
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **calculate user age based on date input.** | 9/4/2000 | 20 |
-| **calculate user next birthday in Mercury years.** | 9/4/2000 | ? |
-| **calculate user next birthday in Venus years.** | 9/4/2000 | ? |
-| **calculate user next birthday in Earth years.** | 9/4/2000 | ? |
-| **calculate user next birthday in Mars years.** | 9/4/2000 | ? |
-| **calculate user next birthday in Jupiter years.** | 9/4/2000 | ? |
+| **calculate user number of days til next birthday on Mercury.** | 9/4/2000 | 87.6 |
+| **calculate user number of days til next birthday on Venus.** | 9/4/2000 | 226.3 |
+| **calculate user number of days til next birthday on Earth.** | 9/4/2000 | 365 |
+| **calculate user number of days til next birthday on Mars.** | 9/4/2000 | 686.2 |
+| **calculate user number of days til next birthday on Jupiter.** | 9/4/2000 | 4328.9 |
 
 
 
