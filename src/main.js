@@ -17,7 +17,6 @@ function writeToPlanetCard(cardDom, keyValPair, calc){
   let html = '';
   let tempDom = cardDom.find('#planet-name');
   tempDom.text(keyValPair['name']);
-  
   tempDom = cardDom.find('#planet-stats');
   tempDom.text('');
   html += '<li> Years old: ' + keyValPair["years"] + '</li>';
@@ -35,19 +34,13 @@ function writeToPlanetCard(cardDom, keyValPair, calc){
   tempDom.append(html);
 }
 $(document).ready(function() {
-  let calc = new Calculator(1,1,1, 'United_States');
-  let d = new Date();
-  let currentDate = d.getFullYear() + '-'+ (d.getMonth() +1) + '-' + d.getDay();
-  console.log('here: ' +currentDate);
-  
-  $('#age').attr('max', currentDate);
+  let calc = new Calculator(1,1,1, 'United_States');  
   writeCountries($('#country'), calc);
   $('#input-form').submit(function (event) {
     event.preventDefault();
     $('#planets').show();
     let age = new Date($('#age').val());
     age.setDate( age.getDate() + 1);
-    console.log(age);
     let country = $('#country').val();
     calc = new Calculator(age.getMonth() + 1, age.getDate(), age.getFullYear(), country);
     writeToPlanetCard($('#mercury'), calc.mercury, calc);
