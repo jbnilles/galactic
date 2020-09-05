@@ -11,16 +11,16 @@ _This project will ask the user for their age and then show the user what their 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **calculate user age in Mercury years.** | 100 | 417 |
-| **calculate user age in Venus years.** | 100 | 161 |
-| **calculate user age in Mars years.**| 100 | 53 |
-| **calculate user age in Jupiter years.**| 100 | 8 |
-| **calculate user life expectancy in Earth years**| U.S. | 78.5 |
-| **calculate user life expectancy in Mercury years**| 78.5 | 327 |
-| **calculate user life expectancy in Venus years**| 78.5 | 127 |
-| **calculate user life expectancy in Mars years**| 78.5 | 42 |
-| **calculate user life expectancy in Jupiter years**| 78.5 | 7 |
-| **If user has surpassed the life expectancy calculate, how many years passed they are**| 78.5, 100 | 22 |
+| **calculate user age in Mercury years.** | 100 | 416.67 |
+| **calculate user age in Venus years.** | 100 | 161.29 |
+| **calculate user age in Mars years.**| 100 | 53.19 |
+| **calculate user age in Jupiter years.**| 100 | 8.43 |
+| **calculate user life expectancy in Earth years**| United_States | 78.5 |
+| **calculate user life expectancy in Mercury years**| 78.5 | 327.08 |
+| **calculate user life expectancy in Venus years**| 78.5 | 126.61 |
+| **calculate user life expectancy in Mars years**| 78.5 | 41.76 |
+| **calculate user life expectancy in Jupiter years**| 78.5 | 6.62 |
+| **If user has surpassed the life expectancy calculate, how many years passed they are**| 78.5, 100 | 21.5 |
 
 ### Further exploration Specs
 | Spec | Input | Output |
@@ -32,7 +32,8 @@ _This project will ask the user for their age and then show the user what their 
 | **calculate user number of days til next birthday on Mars.** | 9/4/2000 | 686.2 |
 | **calculate user number of days til next birthday on Jupiter.** | 9/4/2000 | 4328.9 |
 
-
+## GH-Pages deployment
+_https://jbnilles.github.io/galactic_
 
 ## Setup/Installation Requirements
 
