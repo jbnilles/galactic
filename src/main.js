@@ -36,9 +36,15 @@ function writeToPlanetCard(cardDom, keyValPair, calc){
 }
 $(document).ready(function() {
   let calc = new Calculator(1,1,1, 'United_States');
+  let d = new Date();
+  let currentDate = d.getFullYear() + '-'+ (d.getMonth() +1) + '-' + d.getDay();
+  console.log('here: ' +currentDate);
+  
+  $('#age').attr('max', currentDate);
   writeCountries($('#country'), calc);
   $('#input-form').submit(function (event) {
     event.preventDefault();
+    $('#planets').show();
     let age = new Date($('#age').val());
     age.setDate( age.getDate() + 1);
     console.log(age);
