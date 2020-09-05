@@ -2,7 +2,12 @@ export default class Calculator {
   constructor(month,day,year, country){
     this.expectedLife = {
       United_States: 78.5,
-      United_Kingdom: 80.96
+      United_Kingdom: 80.96,
+      Australia: 83.94,
+      Israel: 83.49,
+      Mexico: 75.41,
+      India: 70.42,
+      Nigeria: 55.75
     };
     this.earthYears = this.calcYearsOld(month, day, year);
     this.lifeExpectancy = this.getEarthLifeExpectancy(country);

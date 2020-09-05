@@ -1,3 +1,17 @@
 #planets{
   display: none;
 }
+.jumbotron{
+  text-align: center;
+  background-color:rgb(240, 238, 158);
+}
+body{
+  background-color:rgb(222, 222, 248);
+}
+.card{
+  margin-top: 10px;
+  background-color:rgb(240, 238, 158);
+}
+.container{
+  background-color:rgb(212, 211, 158);
+}
